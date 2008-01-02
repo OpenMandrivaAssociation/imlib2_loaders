@@ -11,6 +11,7 @@ Release: %{release}
 License: Distributable
 Group: System/Libraries
 Source: %{name}-%{cvsrel}.tar.bz2
+BuildRoot: %{_tmppath}/%{name}-buildroot
 URL: http://www.enlightenment.org/pages/imlib2.html
 Buildrequires: imlib2-devel libltdl-devel
 Requires: imlib2 
