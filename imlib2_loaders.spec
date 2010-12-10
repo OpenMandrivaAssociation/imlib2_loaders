@@ -1,6 +1,6 @@
 %define name    imlib2_loaders
 %define version 1.1.2
-%define release %mkrel 0.%{cvsrel}.2
+%define release %mkrel 0.%{cvsrel}.3
 
 %define cvsrel 20060103
 
