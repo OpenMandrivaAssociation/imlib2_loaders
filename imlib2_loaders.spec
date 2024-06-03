@@ -1,19 +1,14 @@
-%define name    imlib2_loaders
-%define version 1.1.2
-%define release %mkrel 0.%{cvsrel}.3
-
-%define cvsrel 20060103
-
 Summary: Additional image loaders for Imlib2
-Name: %{name}
-Version: %{version}
-Release: %{release}
+Name: imlib2_loaders
+Version: 1.12.2
+Release: 1
 License: Distributable
 Group: System/Libraries
-Source: %{name}-%{cvsrel}.tar.bz2
-BuildRoot: %{_tmppath}/%{name}-buildroot
-URL: http://www.enlightenment.org/pages/imlib2.html
-Buildrequires: imlib2-devel libltdl-devel
+Source0: https://sourceforge.net/projects/enlightenment/files/imlib2-src/%{version}/imlib2_loaders-%{version}.tar.xz
+URL: https://www.enlightenment.org/pages/imlib2.html
+
+Buildrequires: pkgconfig(imlib2) 
+BuildRequires: libltdl-devel
 Requires: imlib2 
 
 %description
@@ -22,22 +17,14 @@ which for some reason (such as license issues, Imlib2 is BSD licensed, see
 README inside) are not distributed with Imlib2 directly.
 
 %prep
-rm -rf $RPM_BUILD_ROOT
-
-%setup -q -n %name
+%autosetup -p1
 
 %build
-
 ./autogen.sh
-
-%make
+%make_build
 
 %install
-
-%makeinstall
-
-%clean
-rm -rf $RPM_BUILD_ROOT
+%make_install
 
 %files
 %defattr(-,root,root) 
