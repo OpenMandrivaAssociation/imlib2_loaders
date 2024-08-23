@@ -9,7 +9,7 @@ URL: https://www.enlightenment.org/pages/imlib2.html
 
 BuildRequires: autoconf >= 2.52
 BuildRequires: automake >= 1.6
-BuildRequires: libtool >= 2:2
+BuildRequires: libtool
 BuildRequires: pkgconfig(imlib2) 
 BuildRequires: libltdl-devel
 Requires: imlib2 
