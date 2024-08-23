@@ -19,6 +19,7 @@ README inside) are not distributed with Imlib2 directly.
 %prep
 %autosetup -p1
 
+autoreconf -fi
 %build
 #/autogen.sh
 %make_build
