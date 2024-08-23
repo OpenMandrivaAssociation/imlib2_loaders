@@ -7,7 +7,10 @@ Group: System/Libraries
 Source0: https://sourceforge.net/projects/enlightenment/files/imlib2-src/%{version}/imlib2_loaders-%{version}.tar.xz
 URL: https://www.enlightenment.org/pages/imlib2.html
 
-Buildrequires: pkgconfig(imlib2) 
+BuildRequires: autoconf >= 2.52
+BuildRequires: automake >= 1.6
+BuildRequires: libtool >= 2:2
+BuildRequires: pkgconfig(imlib2) 
 BuildRequires: libltdl-devel
 Requires: imlib2 
 
