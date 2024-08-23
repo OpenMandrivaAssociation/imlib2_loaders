@@ -1,6 +1,6 @@
 Summary: Additional image loaders for Imlib2
 Name: imlib2_loaders
-Version: 1.12.2
+Version: 1.12.3
 Release: 1
 License: Distributable
 Group: System/Libraries
